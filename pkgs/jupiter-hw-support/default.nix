@@ -7,6 +7,7 @@
   coreutils,
   e2fsprogs,
   exfatprogs,
+  f2fs-tools,
   f3,
   findutils,
   gawk,
@@ -33,6 +34,7 @@ let
       coreutils
       e2fsprogs
       exfatprogs
+      f2fs-tools
       f3
       findutils
       gawk
@@ -49,6 +51,7 @@ let
     execer = [
       "cannot:${e2fsprogs}/bin/fsck.ext4"
       "cannot:${e2fsprogs}/bin/mkfs.ext4"
+      "cannot:${f2fs-tools}/bin/fsck.f2fs"
       "cannot:${procps}/bin/pgrep"
       "cannot:${systemd}/bin/systemctl"
       "cannot:${systemd}/bin/udevadm"
